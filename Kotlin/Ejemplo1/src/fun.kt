@@ -53,16 +53,15 @@ class Persona {
 
 fun iniciar(edad:Integer){
 
-    edadActual = edad + 10
+    edadActual = edad
 
 }
+    override fun toString(): String {
+        return "La edad ectual es $edadActual y el nombre es $mNombre"
+    }
 }
 
-override fun toString():String{
 
-    return "la edad actual es $edadActual y el nombre es $nNombre"
-
-}
 class PersonaDos(nombre:String ,edad:Integer) {
 
     var nEdad = edad
